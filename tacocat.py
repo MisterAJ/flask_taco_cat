@@ -110,7 +110,7 @@ if __name__ == '__main__':
     try:
         with models.db.transaction():
             models.User.create_user(
-                email='billy@example.com',
+                email='aj@example.com',
                 password='password'
             )
             user = models.User.select().get()
